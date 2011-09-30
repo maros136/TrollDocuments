@@ -1,0 +1,21 @@
+Tento navod mi funguje pre Windows XP SP3
+
+Stiahnite a nainstalujte:
+TrollEdit - https://github.com/drahosp/TrollEdit
+MinGW - nainstaluj mingw-get-inst-20110802.exe v priecinku ./Tools a daj tahat verziu z aktualnych repozitarov 
+Cmake - nainstaluj cmake-2.8.5-win32-x86.exe v priecinku ./Tools
+QT - http://get.qt.nokia.com/qtsdk/Qt_SDK_Win_offline_v1_1_3_en.exe
+   - treba nainstalovat aj libky pre MinGW, dodatocne sa to stiahne v Maintain Qt SDK v moznostiach balikov
+
+Treba nastavit Enviroments vo Windowse 
+PATH                  C:\MinGW\bin;C:\QtSDK\Desktop\Qt\4.7.4\mingw\bin
+QMAKESPEC             C:\QtSDK\Desktop\Qt\4.7.4\mingw\mkspecs\win32-g++
+QT_LIBRARIES          C:\QtSDK\Desktop\Qt\4.7.4\mingw\lib
+QT_MOC_EXECUTABLE     C:\QtSDK\Desktop\Qt\4.7.4\mingw\bin\moc.exe
+QT_QMAKE_EXECUTABLE   C:\QtSDK\Desktop\Qt\4.7.4\mingw\bin\qmake.exe
+
+Zapnete Cmake nastavite cesty jednu do priecinku s TrollEditom a druhu do podpriecinku napr. _build
+Tam uvidite ci vam nejaka cesta nechyba ak nie, tak vypnite a mozeme vybuildovat pomocou build.bat, ktory je v priecinku TrollEditu
+Ale pre QT treba tlacidlom Generate vygenerovat subor cmake_install.cmake aby nam to fungovalo 
+
+V QT mozeme otvorime subor cmake_install.cmake, ktory nam vytvoril Cmake ako projekt, treba nastavit compilator MinGW x86 32bit, dalej mozete editivat a aj buildovat...
