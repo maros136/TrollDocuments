@@ -5,7 +5,7 @@ TrollEdit - https://github.com/drahosp/TrollEdit
 MinGW - nainstaluj mingw-get-inst-20110802.exe v priecinku ./Tools a daj tahat verziu z aktualnych repozitarov 
 Cmake - nainstaluj cmake-2.8.5-win32-x86.exe v priecinku ./Tools
 QT - http://get.qt.nokia.com/qtsdk/Qt_SDK_Win_offline_v1_1_3_en.exe
-   - treba nainstalovat aj libky pre MinGW, dodatocne sa to stiahne v Maintain Qt SDK v moznostiach balikov
+   - treba nainstalovat aj libky pre MinGW, dodatocne sa to stiahne v Maintain Qt SDK v moznostiach balikov, vid obrazok "QT SDK Maintain.jpg"
 CMakeLists.txt - je tam nastaveny typ buildovania na Debug
 
 Treba nastavit Enviroments vo Windowse 
